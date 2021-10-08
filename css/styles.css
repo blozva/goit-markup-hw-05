@@ -551,6 +551,9 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.link-item {
+  transition: box-shadow var(--timing-duration) var(--timing-function);
+}
 .activities-list {
   position: relative;
   overflow: hidden;
@@ -600,7 +603,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opasity var(--timing-duration) var(--timing-function);
+  transition: opacity var(--timing-duration) var(--timing-function);
 }
 .backdrop.is-hidden {
   opacity: 0;
