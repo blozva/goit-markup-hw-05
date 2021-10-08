@@ -245,7 +245,8 @@ img {
   cursor: pointer;
   text-align: center;
   transition: color var(--timing-duration) var(--timing-function),
-    background-color var(--timing-duration) var(--timing-function);
+    background-color var(--timing-duration) var(--timing-function),
+    box-shadow var(--timing-duration) var(--timing-function);
 }
 
 /*---Заголовки h2 (Portfolio h1)---*/
@@ -592,10 +593,41 @@ img {
   color: var(--text-item-color);
 }
 /*--модальне вікно--- */
-/* .backdrop {
-  width: 100vw;
-  height: 100vw;
+.backdrop {
   position: fixed;
-  background-color: rgb(green);
   top: 0;
-} */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opasity var(--timing-duration) var(--timing-function);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: var(--primary-title-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.close-btn {
+  border: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  background-color: var(--primary-title-color);
+}
+.close-btn-icon {
+  width: 30px;
+  height: 30px;
+}
