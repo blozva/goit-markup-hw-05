@@ -628,7 +628,13 @@ img {
   position: fixed;
   top: 8px;
   right: 8px;
+  cursor: pointer;
   background-color: var(--primary-title-color);
+  fill: #000000;
+}
+.close-btn:hover,
+.close-btn:focus {
+  fill: var(--accent-color);
 }
 .close-btn-icon {
   width: 30px;
