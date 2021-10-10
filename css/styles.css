@@ -632,8 +632,7 @@ img {
   background-color: var(--primary-title-color);
   fill: #000000;
 }
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover {
   fill: var(--accent-color);
 }
 .close-btn-icon {
