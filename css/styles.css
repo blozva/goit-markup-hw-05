@@ -472,10 +472,11 @@ img {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
-.address {
-  display: flex;
-  font-style: normal;
+.footer-address {
+  width: 231px;
+  margin-right: 70px;
 }
 .address-row .link.maps {
   color: var(--primary-title-color);
@@ -485,21 +486,18 @@ img {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: var(--text-item-color);
   color: rgba(255, 255, 255, 0.6);
 }
 .address-auth-nav {
-  margin-right: 70px;
-}
-.address-row {
-  align-items: baseline;
+  display: flex;
+  font-style: normal;
+  flex-direction: column;
 }
 .address-row:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-auth-nav .link:hover,
-.address-auth-nav .link:focus {
+.address-auth-nav .link:hover {
   color: var(--accent-color);
 }
 .address-auth-nav .link {
@@ -508,8 +506,7 @@ img {
 /* ------ */
 .footer-social {
   width: 206px;
-  height: 80px;
-  padding-top: 12px;
+  margin-right: 90px;
 }
 .footer-headline {
   margin-bottom: 20px;
